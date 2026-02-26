@@ -5,6 +5,7 @@ namespace task1
         public Form1()
         {
             InitializeComponent();
+            textN.Text = Properties.Settings.Default.textN.ToString();
         }
         
         private void button1_Click(object sender, EventArgs e)
@@ -18,6 +19,11 @@ namespace task1
             {
                 return; 
             }
+
+            //  передаем введенные значения в параметры
+            Properties.Settings.Default.textN = n;
+            Properties.Settings.Default.Save(); // сохраняем 
+
 
             MessageBox.Show(Logic.FindFirstGreaterThanN(n));
         }
