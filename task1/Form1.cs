@@ -9,7 +9,15 @@ namespace task1
         
         private void button1_Click(object sender, EventArgs e)
         {
-            var n = int.Parse(this.textN.Text);
+            int n;
+            try 
+            {
+                n = int.Parse(this.textN.Text);
+            }
+            catch (FormatException) 
+            {
+                return; 
+            }
 
             MessageBox.Show(Logic.FindFirstGreaterThanN(n));
         }
