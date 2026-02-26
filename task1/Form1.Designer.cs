@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            textN = new TextBox();
             label1 = new Label();
             button1 = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // textN
             // 
-            textBox1.Location = new Point(12, 22);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 0;
+            textN.Location = new Point(12, 22);
+            textN.Name = "textN";
+            textN.Size = new Size(100, 23);
+            textN.TabIndex = 0;
             // 
             // label1
             // 
@@ -63,10 +63,10 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(240, 97);
             Controls.Add(button1);
             Controls.Add(label1);
-            Controls.Add(textBox1);
+            Controls.Add(textN);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -75,7 +75,7 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox textN;
         private Label label1;
         private Button button1;
     }
