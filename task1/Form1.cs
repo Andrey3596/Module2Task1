@@ -6,10 +6,12 @@ namespace task1
         {
             InitializeComponent();
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(this.textN.Text);
+            var n = int.Parse(this.textN.Text);
+
+            MessageBox.Show(Logic.FindFirstGreaterThanN(n));
         }
     }
 
