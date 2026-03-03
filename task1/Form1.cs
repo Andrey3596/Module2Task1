@@ -24,8 +24,8 @@ namespace task1
             Properties.Settings.Default.textN = n;
             Properties.Settings.Default.Save(); // сохраняем 
 
-
-            MessageBox.Show(Logic.FindFirstGreaterThanN(n));
+            string answer = Logic.FindFirstGreaterThanN(n);
+            MessageBox.Show(answer);
         }
     }
 
